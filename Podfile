@@ -5,5 +5,6 @@ target 'DavidPrototype' do
   use_frameworks!
   # Pods for DavidPrototype
   pod 'Firebase/Auth'
+  pod 'Firebase/Firestore'
 
 end
