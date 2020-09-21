@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -15,7 +15,7 @@
 		CB662B472518D3E100283249 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB662B462518D3E100283249 /* Assets.xcassets */; };
 		CB662B4A2518D3E100283249 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB662B482518D3E100283249 /* LaunchScreen.storyboard */; };
 		CB662B522518D42600283249 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB662B512518D42600283249 /* Main.storyboard */; };
-		CB662B542518D86500283249 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CB662B532518D86500283249 /* GoogleService-Info.plist */; };
+		CB662B562518E92500283249 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CB662B552518E92500283249 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,7 +29,7 @@
 		CB662B492518D3E100283249 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CB662B4B2518D3E100283249 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CB662B512518D42600283249 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
-		CB662B532518D86500283249 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		CB662B552518E92500283249 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		CD730374560D1BA099ADE3AF /* Pods-DavidPrototype.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DavidPrototype.release.xcconfig"; path = "Target Support Files/Pods-DavidPrototype/Pods-DavidPrototype.release.xcconfig"; sourceTree = "<group>"; };
 		F9BD032D105964ED83183C8E /* Pods_DavidPrototype.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DavidPrototype.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -82,7 +82,7 @@
 				CB662B462518D3E100283249 /* Assets.xcassets */,
 				CB662B482518D3E100283249 /* LaunchScreen.storyboard */,
 				CB662B4B2518D3E100283249 /* Info.plist */,
-				CB662B532518D86500283249 /* GoogleService-Info.plist */,
+				CB662B552518E92500283249 /* GoogleService-Info.plist */,
 				CB662B432518D3DC00283249 /* DavidPrototype.xcdatamodeld */,
 			);
 			path = DavidPrototype;
@@ -94,7 +94,6 @@
 				3EB8DB69EA9621E8472338BF /* Pods-DavidPrototype.debug.xcconfig */,
 				CD730374560D1BA099ADE3AF /* Pods-DavidPrototype.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -159,7 +158,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CB662B522518D42600283249 /* Main.storyboard in Resources */,
-				CB662B542518D86500283249 /* GoogleService-Info.plist in Resources */,
+				CB662B562518E92500283249 /* GoogleService-Info.plist in Resources */,
 				CB662B4A2518D3E100283249 /* LaunchScreen.storyboard in Resources */,
 				CB662B472518D3E100283249 /* Assets.xcassets in Resources */,
 			);
