@@ -7,25 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A8DD75E66FFC9A7E717F410 /* Pods_DavidPrototype.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9BD032D105964ED83183C8E /* Pods_DavidPrototype.framework */; };
 		CB662B3B2518D3DC00283249 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB662B3A2518D3DC00283249 /* AppDelegate.swift */; };
 		CB662B3D2518D3DC00283249 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB662B3C2518D3DC00283249 /* SceneDelegate.swift */; };
 		CB662B3F2518D3DC00283249 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB662B3E2518D3DC00283249 /* ViewController.swift */; };
-		CB662B422518D3DC00283249 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB662B402518D3DC00283249 /* Main.storyboard */; };
 		CB662B452518D3DC00283249 /* DavidPrototype.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CB662B432518D3DC00283249 /* DavidPrototype.xcdatamodeld */; };
 		CB662B472518D3E100283249 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB662B462518D3E100283249 /* Assets.xcassets */; };
 		CB662B4A2518D3E100283249 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB662B482518D3E100283249 /* LaunchScreen.storyboard */; };
+		CB662B522518D42600283249 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB662B512518D42600283249 /* Main.storyboard */; };
+		CB662B542518D86500283249 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CB662B532518D86500283249 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3EB8DB69EA9621E8472338BF /* Pods-DavidPrototype.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DavidPrototype.debug.xcconfig"; path = "Target Support Files/Pods-DavidPrototype/Pods-DavidPrototype.debug.xcconfig"; sourceTree = "<group>"; };
 		CB662B372518D3DC00283249 /* DavidPrototype.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DavidPrototype.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB662B3A2518D3DC00283249 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CB662B3C2518D3DC00283249 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		CB662B3E2518D3DC00283249 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		CB662B412518D3DC00283249 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CB662B442518D3DC00283249 /* DavidPrototype.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DavidPrototype.xcdatamodel; sourceTree = "<group>"; };
 		CB662B462518D3E100283249 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CB662B492518D3E100283249 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CB662B4B2518D3E100283249 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CB662B512518D42600283249 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		CB662B532518D86500283249 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		CD730374560D1BA099ADE3AF /* Pods-DavidPrototype.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DavidPrototype.release.xcconfig"; path = "Target Support Files/Pods-DavidPrototype/Pods-DavidPrototype.release.xcconfig"; sourceTree = "<group>"; };
+		F9BD032D105964ED83183C8E /* Pods_DavidPrototype.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DavidPrototype.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +39,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A8DD75E66FFC9A7E717F410 /* Pods_DavidPrototype.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		061901DD3A50958BFA0EAC4E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F9BD032D105964ED83183C8E /* Pods_DavidPrototype.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		CB662B2E2518D3DC00283249 = {
 			isa = PBXGroup;
 			children = (
 				CB662B392518D3DC00283249 /* DavidPrototype */,
 				CB662B382518D3DC00283249 /* Products */,
+				EC965FE4CFA29FF4F543AD13 /* Pods */,
+				061901DD3A50958BFA0EAC4E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,16 +75,27 @@
 		CB662B392518D3DC00283249 /* DavidPrototype */ = {
 			isa = PBXGroup;
 			children = (
+				CB662B512518D42600283249 /* Main.storyboard */,
 				CB662B3A2518D3DC00283249 /* AppDelegate.swift */,
 				CB662B3C2518D3DC00283249 /* SceneDelegate.swift */,
 				CB662B3E2518D3DC00283249 /* ViewController.swift */,
-				CB662B402518D3DC00283249 /* Main.storyboard */,
 				CB662B462518D3E100283249 /* Assets.xcassets */,
 				CB662B482518D3E100283249 /* LaunchScreen.storyboard */,
 				CB662B4B2518D3E100283249 /* Info.plist */,
+				CB662B532518D86500283249 /* GoogleService-Info.plist */,
 				CB662B432518D3DC00283249 /* DavidPrototype.xcdatamodeld */,
 			);
 			path = DavidPrototype;
+			sourceTree = "<group>";
+		};
+		EC965FE4CFA29FF4F543AD13 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3EB8DB69EA9621E8472338BF /* Pods-DavidPrototype.debug.xcconfig */,
+				CD730374560D1BA099ADE3AF /* Pods-DavidPrototype.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -77,9 +105,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CB662B4E2518D3E100283249 /* Build configuration list for PBXNativeTarget "DavidPrototype" */;
 			buildPhases = (
+				54B950F600C5494851538BC0 /* [CP] Check Pods Manifest.lock */,
 				CB662B332518D3DC00283249 /* Sources */,
 				CB662B342518D3DC00283249 /* Frameworks */,
 				CB662B352518D3DC00283249 /* Resources */,
+				3DB457B41AF3C7728EE7A5BD /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -128,13 +158,56 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB662B522518D42600283249 /* Main.storyboard in Resources */,
+				CB662B542518D86500283249 /* GoogleService-Info.plist in Resources */,
 				CB662B4A2518D3E100283249 /* LaunchScreen.storyboard in Resources */,
 				CB662B472518D3E100283249 /* Assets.xcassets in Resources */,
-				CB662B422518D3DC00283249 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3DB457B41AF3C7728EE7A5BD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DavidPrototype/Pods-DavidPrototype-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DavidPrototype/Pods-DavidPrototype-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DavidPrototype/Pods-DavidPrototype-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		54B950F600C5494851538BC0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DavidPrototype-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		CB662B332518D3DC00283249 /* Sources */ = {
@@ -151,14 +224,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		CB662B402518D3DC00283249 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				CB662B412518D3DC00283249 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		CB662B482518D3E100283249 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -286,6 +351,7 @@
 		};
 		CB662B4F2518D3E100283249 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3EB8DB69EA9621E8472338BF /* Pods-DavidPrototype.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -304,6 +370,7 @@
 		};
 		CB662B502518D3E100283249 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CD730374560D1BA099ADE3AF /* Pods-DavidPrototype.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
