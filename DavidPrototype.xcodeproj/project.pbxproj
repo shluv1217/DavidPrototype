@@ -10,12 +10,14 @@
 		0A8DD75E66FFC9A7E717F410 /* Pods_DavidPrototype.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9BD032D105964ED83183C8E /* Pods_DavidPrototype.framework */; };
 		CB662B3B2518D3DC00283249 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB662B3A2518D3DC00283249 /* AppDelegate.swift */; };
 		CB662B3D2518D3DC00283249 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB662B3C2518D3DC00283249 /* SceneDelegate.swift */; };
-		CB662B3F2518D3DC00283249 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB662B3E2518D3DC00283249 /* ViewController.swift */; };
+		CB662B3F2518D3DC00283249 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB662B3E2518D3DC00283249 /* MainViewController.swift */; };
 		CB662B452518D3DC00283249 /* DavidPrototype.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CB662B432518D3DC00283249 /* DavidPrototype.xcdatamodeld */; };
 		CB662B472518D3E100283249 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB662B462518D3E100283249 /* Assets.xcassets */; };
 		CB662B4A2518D3E100283249 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB662B482518D3E100283249 /* LaunchScreen.storyboard */; };
 		CB662B522518D42600283249 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB662B512518D42600283249 /* Main.storyboard */; };
 		CB662B562518E92500283249 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CB662B552518E92500283249 /* GoogleService-Info.plist */; };
+		CB662B5B2519CD6600283249 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB662B5A2519CD6600283249 /* Constants.swift */; };
+		CBCA84E42519D34600F91B1F /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBCA84E32519D34600F91B1F /* RegisterViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,13 +25,15 @@
 		CB662B372518D3DC00283249 /* DavidPrototype.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DavidPrototype.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB662B3A2518D3DC00283249 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CB662B3C2518D3DC00283249 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		CB662B3E2518D3DC00283249 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CB662B3E2518D3DC00283249 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		CB662B442518D3DC00283249 /* DavidPrototype.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DavidPrototype.xcdatamodel; sourceTree = "<group>"; };
 		CB662B462518D3E100283249 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CB662B492518D3E100283249 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CB662B4B2518D3E100283249 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CB662B512518D42600283249 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		CB662B552518E92500283249 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		CB662B5A2519CD6600283249 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		CBCA84E32519D34600F91B1F /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		CD730374560D1BA099ADE3AF /* Pods-DavidPrototype.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DavidPrototype.release.xcconfig"; path = "Target Support Files/Pods-DavidPrototype/Pods-DavidPrototype.release.xcconfig"; sourceTree = "<group>"; };
 		F9BD032D105964ED83183C8E /* Pods_DavidPrototype.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DavidPrototype.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -75,10 +79,11 @@
 		CB662B392518D3DC00283249 /* DavidPrototype */ = {
 			isa = PBXGroup;
 			children = (
-				CB662B512518D42600283249 /* Main.storyboard */,
+				CB662B592519CD4800283249 /* Model */,
+				CB662B5825198A0000283249 /* Controller */,
+				CB662B57251989DE00283249 /* View */,
 				CB662B3A2518D3DC00283249 /* AppDelegate.swift */,
 				CB662B3C2518D3DC00283249 /* SceneDelegate.swift */,
-				CB662B3E2518D3DC00283249 /* ViewController.swift */,
 				CB662B462518D3E100283249 /* Assets.xcassets */,
 				CB662B482518D3E100283249 /* LaunchScreen.storyboard */,
 				CB662B4B2518D3E100283249 /* Info.plist */,
@@ -86,6 +91,31 @@
 				CB662B432518D3DC00283249 /* DavidPrototype.xcdatamodeld */,
 			);
 			path = DavidPrototype;
+			sourceTree = "<group>";
+		};
+		CB662B57251989DE00283249 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CB662B512518D42600283249 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CB662B5825198A0000283249 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				CB662B3E2518D3DC00283249 /* MainViewController.swift */,
+				CBCA84E32519D34600F91B1F /* RegisterViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		CB662B592519CD4800283249 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CB662B5A2519CD6600283249 /* Constants.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		EC965FE4CFA29FF4F543AD13 /* Pods */ = {
@@ -213,8 +243,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CB662B3F2518D3DC00283249 /* ViewController.swift in Sources */,
+				CB662B5B2519CD6600283249 /* Constants.swift in Sources */,
+				CB662B3F2518D3DC00283249 /* MainViewController.swift in Sources */,
 				CB662B452518D3DC00283249 /* DavidPrototype.xcdatamodeld in Sources */,
+				CBCA84E42519D34600F91B1F /* RegisterViewController.swift in Sources */,
 				CB662B3B2518D3DC00283249 /* AppDelegate.swift in Sources */,
 				CB662B3D2518D3DC00283249 /* SceneDelegate.swift in Sources */,
 			);
