@@ -177,7 +177,7 @@
         <!--Table View Controller-->
         <scene sceneID="Q3U-o5-NK5">
             <objects>
-                <tableViewController id="WIb-gs-O1w" sceneMemberID="viewController">
+                <tableViewController id="WIb-gs-O1w" customClass="TableViewController" customModule="DavidPrototype" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="K2o-Bc-is4">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -197,7 +197,13 @@
                             <outlet property="delegate" destination="WIb-gs-O1w" id="CHc-6L-yNz"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="5Dn-7u-hKS"/>
+                    <navigationItem key="navigationItem" id="5Dn-7u-hKS">
+                        <barButtonItem key="rightBarButtonItem" title="LogOut" id="yPR-48-fih">
+                            <connections>
+                                <action selector="logoutPressed:" destination="WIb-gs-O1w" id="fN7-zC-CDC"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xXe-jG-Ev9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -217,7 +223,7 @@
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="textfield" translatesAutoresizingMaskIntoConstraints="NO" id="QWh-LN-1WE">
                                         <rect key="frame" x="0.0" y="20" width="414" height="137"/>
                                     </imageView>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="F21-w0-z4z">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="1@2.com" placeholder="Email" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="F21-w0-z4z">
                                         <rect key="frame" x="49" y="51" width="317" height="45"/>
                                         <color key="textColor" name="BrandBlue"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="25"/>
@@ -242,7 +248,7 @@
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="textfield" translatesAutoresizingMaskIntoConstraints="NO" id="mZe-tG-Gm8">
                                         <rect key="frame" x="0.0" y="20" width="414" height="137"/>
                                     </imageView>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="abR-gz-opL">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="123456" placeholder="Password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="abR-gz-opL">
                                         <rect key="frame" x="49" y="48" width="317" height="45"/>
                                         <color key="textColor" name="BrandBlue"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="25"/>
@@ -254,6 +260,9 @@
                                         <state key="normal" title="Log In">
                                             <color key="titleColor" name="BrandLightBlue"/>
                                         </state>
+                                        <connections>
+                                            <action selector="loginPressed:" destination="5v2-hE-4Ub" eventType="touchUpInside" id="tab-rx-m01"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
@@ -286,6 +295,8 @@
                     </view>
                     <navigationItem key="navigationItem" id="27I-zl-wRA"/>
                     <connections>
+                        <outlet property="emailTextField" destination="F21-w0-z4z" id="2uv-JN-Uyo"/>
+                        <outlet property="passwordTextField" destination="abR-gz-opL" id="eAj-u7-Grl"/>
                         <segue destination="WIb-gs-O1w" kind="show" identifier="LoginToCategory" id="LhN-ti-KPg"/>
                     </connections>
                 </viewController>

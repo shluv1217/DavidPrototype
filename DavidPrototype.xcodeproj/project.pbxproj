@@ -18,6 +18,8 @@
 		CB662B562518E92500283249 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CB662B552518E92500283249 /* GoogleService-Info.plist */; };
 		CB662B5B2519CD6600283249 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB662B5A2519CD6600283249 /* Constants.swift */; };
 		CBCA84E42519D34600F91B1F /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBCA84E32519D34600F91B1F /* RegisterViewController.swift */; };
+		CBCA84E6251A251400F91B1F /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBCA84E5251A251400F91B1F /* LoginViewController.swift */; };
+		CBCA84E8251AF8D400F91B1F /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBCA84E7251AF8D400F91B1F /* TableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +36,8 @@
 		CB662B552518E92500283249 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		CB662B5A2519CD6600283249 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		CBCA84E32519D34600F91B1F /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		CBCA84E5251A251400F91B1F /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		CBCA84E7251AF8D400F91B1F /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		CD730374560D1BA099ADE3AF /* Pods-DavidPrototype.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DavidPrototype.release.xcconfig"; path = "Target Support Files/Pods-DavidPrototype/Pods-DavidPrototype.release.xcconfig"; sourceTree = "<group>"; };
 		F9BD032D105964ED83183C8E /* Pods_DavidPrototype.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DavidPrototype.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -106,6 +110,8 @@
 			children = (
 				CB662B3E2518D3DC00283249 /* MainViewController.swift */,
 				CBCA84E32519D34600F91B1F /* RegisterViewController.swift */,
+				CBCA84E5251A251400F91B1F /* LoginViewController.swift */,
+				CBCA84E7251AF8D400F91B1F /* TableViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -243,8 +249,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CBCA84E6251A251400F91B1F /* LoginViewController.swift in Sources */,
 				CB662B5B2519CD6600283249 /* Constants.swift in Sources */,
 				CB662B3F2518D3DC00283249 /* MainViewController.swift in Sources */,
+				CBCA84E8251AF8D400F91B1F /* TableViewController.swift in Sources */,
 				CB662B452518D3DC00283249 /* DavidPrototype.xcdatamodeld in Sources */,
 				CBCA84E42519D34600F91B1F /* RegisterViewController.swift in Sources */,
 				CB662B3B2518D3DC00283249 /* AppDelegate.swift in Sources */,
