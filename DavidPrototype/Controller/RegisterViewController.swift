@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import Firebase
+//import Firebase
 
 class RegisterViewController: UIViewController{
     
@@ -17,23 +17,24 @@ class RegisterViewController: UIViewController{
     
     @IBAction func registerButtonPressed(_ sender: UIButton) {
         if let email = emailTextField.text, let password = passwordTextField.text {
-            Auth.auth().createUser(withEmail: email, password: password) { authResult, error in
-                //Error handling
-                if let e = error {
-
-                    let alert = UIAlertController(title: "Error", message: e.localizedDescription, preferredStyle: .alert)
-                    let action = UIAlertAction(title: "ok", style: .default) { (action) in
-                    }
-                    
-                    alert.addAction(action)
-                    
-                    self.present(alert, animated: true, completion: nil)
-                    
-                }else{
-                    //Navigate to category viewController
-                    self.performSegue(withIdentifier: "RegisterToCategory", sender: self)
-                }
-            }
+//            Auth.auth().createUser(withEmail: email, password: password) { authResult, error in
+//                //Error handling
+//                if let e = error {
+//
+//                    let alert = UIAlertController(title: "Error", message: e.localizedDescription, preferredStyle: .alert)
+//                    let action = UIAlertAction(title: "ok", style: .default) { (action) in
+//                    }
+//
+//                    alert.addAction(action)
+//
+//                    self.present(alert, animated: true, completion: nil)
+//
+//                }else{
+//                    //Navigate to category viewController
+//                    self.performSegue(withIdentifier: "RegisterToCategory", sender: self)
+//                }
+//            }
+            self.performSegue(withIdentifier: "RegisterToCategory", sender: self)
         }
     }
 }

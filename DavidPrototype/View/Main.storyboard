@@ -174,10 +174,10 @@
             </objects>
             <point key="canvasLocation" x="1855.072463768116" y="-295.3125"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Category View Controller-->
         <scene sceneID="Q3U-o5-NK5">
             <objects>
-                <tableViewController id="WIb-gs-O1w" customClass="TableViewController" customModule="DavidPrototype" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="WIb-gs-O1w" customClass="CategoryViewController" customModule="DavidPrototype" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="K2o-Bc-is4">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -197,13 +197,22 @@
                             <outlet property="delegate" destination="WIb-gs-O1w" id="CHc-6L-yNz"/>
                         </connections>
                     </tableView>
+                    <toolbarItems/>
                     <navigationItem key="navigationItem" id="5Dn-7u-hKS">
-                        <barButtonItem key="rightBarButtonItem" title="LogOut" id="yPR-48-fih">
-                            <connections>
-                                <action selector="logoutPressed:" destination="WIb-gs-O1w" id="fN7-zC-CDC"/>
-                            </connections>
-                        </barButtonItem>
+                        <rightBarButtonItems>
+                            <barButtonItem title="LogOut" id="yPR-48-fih">
+                                <connections>
+                                    <action selector="logoutPressed:" destination="WIb-gs-O1w" id="fN7-zC-CDC"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem systemItem="add" id="G8g-zM-Fto">
+                                <connections>
+                                    <action selector="addButtonPressed:" destination="WIb-gs-O1w" id="4sh-hh-yai"/>
+                                </connections>
+                            </barButtonItem>
+                        </rightBarButtonItems>
                     </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xXe-jG-Ev9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

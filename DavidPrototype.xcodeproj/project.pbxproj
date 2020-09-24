@@ -19,7 +19,8 @@
 		CB662B5B2519CD6600283249 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB662B5A2519CD6600283249 /* Constants.swift */; };
 		CBCA84E42519D34600F91B1F /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBCA84E32519D34600F91B1F /* RegisterViewController.swift */; };
 		CBCA84E6251A251400F91B1F /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBCA84E5251A251400F91B1F /* LoginViewController.swift */; };
-		CBCA84E8251AF8D400F91B1F /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBCA84E7251AF8D400F91B1F /* TableViewController.swift */; };
+		CBCA84E8251AF8D400F91B1F /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBCA84E7251AF8D400F91B1F /* CategoryViewController.swift */; };
+		CBCD0F82251B8DD700D94969 /* DataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CBCD0F80251B8DD700D94969 /* DataModel.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,7 +38,8 @@
 		CB662B5A2519CD6600283249 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		CBCA84E32519D34600F91B1F /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		CBCA84E5251A251400F91B1F /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
-		CBCA84E7251AF8D400F91B1F /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		CBCA84E7251AF8D400F91B1F /* CategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
+		CBCD0F81251B8DD700D94969 /* DataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DataModel.xcdatamodel; sourceTree = "<group>"; };
 		CD730374560D1BA099ADE3AF /* Pods-DavidPrototype.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DavidPrototype.release.xcconfig"; path = "Target Support Files/Pods-DavidPrototype/Pods-DavidPrototype.release.xcconfig"; sourceTree = "<group>"; };
 		F9BD032D105964ED83183C8E /* Pods_DavidPrototype.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DavidPrototype.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -111,7 +113,7 @@
 				CB662B3E2518D3DC00283249 /* MainViewController.swift */,
 				CBCA84E32519D34600F91B1F /* RegisterViewController.swift */,
 				CBCA84E5251A251400F91B1F /* LoginViewController.swift */,
-				CBCA84E7251AF8D400F91B1F /* TableViewController.swift */,
+				CBCA84E7251AF8D400F91B1F /* CategoryViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -120,6 +122,7 @@
 			isa = PBXGroup;
 			children = (
 				CB662B5A2519CD6600283249 /* Constants.swift */,
+				CBCD0F80251B8DD700D94969 /* DataModel.xcdatamodeld */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -144,7 +147,6 @@
 				CB662B332518D3DC00283249 /* Sources */,
 				CB662B342518D3DC00283249 /* Frameworks */,
 				CB662B352518D3DC00283249 /* Resources */,
-				3DB457B41AF3C7728EE7A5BD /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -203,23 +205,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		3DB457B41AF3C7728EE7A5BD /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-DavidPrototype/Pods-DavidPrototype-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-DavidPrototype/Pods-DavidPrototype-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DavidPrototype/Pods-DavidPrototype-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		54B950F600C5494851538BC0 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -252,9 +237,10 @@
 				CBCA84E6251A251400F91B1F /* LoginViewController.swift in Sources */,
 				CB662B5B2519CD6600283249 /* Constants.swift in Sources */,
 				CB662B3F2518D3DC00283249 /* MainViewController.swift in Sources */,
-				CBCA84E8251AF8D400F91B1F /* TableViewController.swift in Sources */,
+				CBCA84E8251AF8D400F91B1F /* CategoryViewController.swift in Sources */,
 				CB662B452518D3DC00283249 /* DavidPrototype.xcdatamodeld in Sources */,
 				CBCA84E42519D34600F91B1F /* RegisterViewController.swift in Sources */,
+				CBCD0F82251B8DD700D94969 /* DataModel.xcdatamodeld in Sources */,
 				CB662B3B2518D3DC00283249 /* AppDelegate.swift in Sources */,
 				CB662B3D2518D3DC00283249 /* SceneDelegate.swift in Sources */,
 			);
@@ -457,6 +443,16 @@
 			);
 			currentVersion = CB662B442518D3DC00283249 /* DavidPrototype.xcdatamodel */;
 			path = DavidPrototype.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+		CBCD0F80251B8DD700D94969 /* DataModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				CBCD0F81251B8DD700D94969 /* DataModel.xcdatamodel */,
+			);
+			currentVersion = CBCD0F81251B8DD700D94969 /* DataModel.xcdatamodel */;
+			path = DataModel.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};

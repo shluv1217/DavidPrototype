@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import Firebase
+//import Firebase
 
 class LoginViewController: UIViewController{
     @IBOutlet weak var emailTextField: UITextField!
@@ -16,18 +16,20 @@ class LoginViewController: UIViewController{
     @IBAction func loginPressed(_ sender: Any) {
         
         if let email = emailTextField.text, let password = passwordTextField.text {
-            Auth.auth().signIn(withEmail: email, password: password) { authResult, error in
-                if let e = error {
-                    let alert = UIAlertController(title: "Error", message: e.localizedDescription, preferredStyle: .alert)
-                    let action = UIAlertAction(title: "ok", style: .default) { (action) in
-                    }
-                    alert.addAction(action)
-                    self.present(alert, animated: true, completion: nil)
-                }else{
-                    self.performSegue(withIdentifier: "LoginToCategory", sender: self)
-                }
-                
-            }
+//            Auth.auth().signIn(withEmail: email, password: password) { authResult, error in
+//                if let e = error {
+//                    let alert = UIAlertController(title: "Error", message: e.localizedDescription, preferredStyle: .alert)
+//                    let action = UIAlertAction(title: "ok", style: .default) { (action) in
+//                    }
+//                    alert.addAction(action)
+//                    self.present(alert, animated: true, completion: nil)
+//                }else{
+//                    self.performSegue(withIdentifier: "LoginToCategory", sender: self)
+//                }
+//
+//            }
+            
+            self.performSegue(withIdentifier: "LoginToCategory", sender: self)
         }
     }
     
